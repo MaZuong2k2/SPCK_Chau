@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant4Future | Chăm sóc cây xanh</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header >
+        <img src="./image/amc9ognc.png" style="width: 76px;">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm cây...">
+            <button onclick="search()">🔍</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="pill-bar">
+            <a class="pill" href="./index.html">Trang chủ</a>
+            <a class="pill" href="./intro.html">Giới thiệu</a>
+            <a class="pill" href="./products.html">Thư viện cây</a>
+            <a class="pill" href="./products.html">Chăm sóc cây</a>
+           
+            <a class="pill" href="./register.html">Đăng ký</a>
+            <a class="pill" href="./login.html">Đăng nhập</a>
+        </div>
+    </nav>
+
+    <div class="mua-box">
+        <h1 style="text-align: center;">Giới thiệu về chúng tôi</h1>
+        <p>Sản phẩm của chúng tôi được tạo ra nhằm giới thiệu về những cây trồng trong nhà , văn phòng,...và cách chăm sóc , dự đoán bệnh cho cây. Plant4Future cùng nhau chăm sóc thế giới xanh</p>
+    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy;  2026 Plant4Future. Cùng nhau chăm sóc thế giới xanh.</p>
+  </footer>
+
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="55L5_EuaUfNI3iV3KPG8v";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+
+  <script src="./script/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant4Future | Chăm sóc cây xanh</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header >
+        <img src="./image/amc9ognc.png" style="width: 76px;">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm cây...">
+            <button onclick="search()">🔍</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="pill-bar">
+            <a class="pill" href="./index.html">Trang chủ</a>
+            <a class="pill" href="./intro.html">Giới thiệu</a>
+            <a class="pill" href="./products.html">Thư viện cây</a>
+            <a class="pill" href="./products.html">Chăm sóc cây</a>
+         
+            <a class="pill" href="./register.html">Đăng ký</a>
+            <a class="pill" href="./login.html">Đăng nhập</a>
+        </div>
+    </nav>
+
+    <section id="news" class="news fade-down">
+        <div class="news-container">
+          <div class="news-item">
+            <a href="./products.html">
+              <img src="./image/anhbg.jpg" alt="">
+              <h3>Khám phá các loại cây</h3>
+            </a>
+            <p>Hãy click vào để xem</p>
+          </div>
+          <div class="news-item">
+            <a href="./products.html">
+              <img src="./image/cham.jpg" alt="">
+              <h3>Gợi ý chăm sóc cây</h3>
+            </a>
+            <p>Hãy click vào để xem</p>
+          </div>
+        </div>
+    </section>
+
+  <section id="new-products" class="news">
+    <h2 style="margin-bottom:20px;">Một số cây nên trồng</h2>
+    <div class="news-container">
+      <div class="news-item">
+        <a href="./products.html"><img src="./image/mai-chi-thien-4.png"></a>
+        <h3>Mai chỉ thiên</h3>
+        <p>Cây cảnh dễ tạo dáng</p>
+      </div>
+
+      <div class="news-item">
+        <a href="./products.html"><img src="./image/nguyet-que-1-1.png"></a>
+        <h3>Nguyệt quế</h3>
+        <p>Cây xanh thơm, hoa đẹp</p>
+      </div>
+
+      <div class="news-item">
+        <a href="./products.html"><img src="./image/cay-co-nhat.jpg"></a>
+        <h3>Cọ nhật</h3>
+        <p>Độc đáo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="new-products" class="news">
+    <div class="news-container">
+      <div class="news-item">
+        <a href="./products.html"><img src="./image/tung-bong-lai.jpg"></a>
+        <h3>Tùng bồng lai</h3>
+        <p>Lọc không khí</p>
+      </div>
+
+      <div class="news-item">
+        <a href="./products.html"><img src="./image/cay-phat-tai.jpg"></a>
+        <h3>Phát tài</h3>
+        <p> Ý nghĩa phong thủy</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;  2026 Plant4Future. Cùng nhau chăm sóc thế giới xanh.</p>
+  </footer>
+
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="55L5_EuaUfNI3iV3KPG8v";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+
+  <script src="./script/search.js"></script>
+</body>
+</html>

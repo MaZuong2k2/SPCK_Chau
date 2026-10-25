@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện cây | Plant4Future</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+<body>
+    <header >
+        <img src="./image/amc9ognc.png" style="width: 76px;">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm cây...">
+            <button onclick="search()">🔍</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="pill-bar">
+            <a class="pill" href="./index.html">Trang chủ</a>
+            <a class="pill" href="./intro.html">Giới thiệu</a>
+            <a class="pill" href="./products.html">Thư viện cây</a>
+            <a class="pill" href="./products.html">Chăm sóc cây</a>
+            <a class="pill" href="./register.html">Đăng ký</a>
+            <a class="pill" href="./login.html">Đăng nhập</a>
+        </div>
+    </nav>
+    
+    <main>
+    <h1>Thư viện cây Plant4Future</h1>
+    <div id="product-list"></div>
+
+    <h2>Hướng dẫn chăm sóc cây</h2>
+    <div id="product-detail">
+        <p>Chưa chọn sản phẩm nào</p>
+    </div>
+
+    <!-- Dữ liệu từ API online -->
+    <section id="plantsolve-api" class="api-section">
+        <h2>🌱 Khám phá thêm cây từ PlantSolve API</h2>
+        <p>Dữ liệu cây được lấy trực tiếp từ PlantSolve bằng JavaScript fetch().</p>
+        <div class="api-search-box">
+            <input id="api-search" type="text" placeholder="Tìm theo tên tiếng Anh hoặc tên khoa học..." aria-label="Tìm cây từ PlantSolve">
+        </div>
+        <p id="api-status" aria-live="polite">Đang kết nối PlantSolve...</p>
+        <div id="api-plant-list"></div>
+        <button id="api-more" type="button" hidden>Hiện thêm cây</button>
+        <div id="api-plant-detail" aria-live="polite">
+            <p>Chọn một cây ở trên để xem thông tin chăm sóc.</p>
+        </div>
+        <p class="api-credit">Nguồn dữ liệu: <a href="https://www.plantsolve.com/plants/" target="_blank" rel="noopener noreferrer">PlantSolve</a></p>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Plant4Future. Cùng nhau chăm sóc thế giới xanh.</p>
+    </footer>
+
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="55L5_EuaUfNI3iV3KPG8v";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+    <script src="./script/products.js"></script>
+    <script src="./script/api-plants.js"></script>
+    <script src="./script/search.js"></script>
+</body>
+</html>
